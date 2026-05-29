@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Essentials – Support</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="home.html"     class="nav-link">🏠 <span>home</span></a>
+    <a href="status.html"   class="nav-link">⚡ <span>status</span></a>
+    <a href="controls.html" class="nav-link">⚙️ <span>controls</span></a>
+    <a href="support.html"  class="nav-link active">🎧 <span>support</span></a>
+    <a href="account.html"  class="nav-link">👤 <span>account</span></a>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">🎧 Support</h1>
+
+    <div style="max-width:520px; margin:0 auto;">
+      <div class="card">
+        <div class="card-title">Send us a message</div>
+
+        <div id="successMsg" class="success-msg"></div>
+
+        <form id="supportForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" class="form-input"
+              placeholder="Your Name"
+              style="background:rgba(255,255,255,0.07);color:#fff;border-color:rgba(255,255,255,0.2);">
+            <span class="field-error" id="nameError">Name is required</span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" class="form-input"
+              placeholder="your@email.com"
+              style="background:rgba(255,255,255,0.07);color:#fff;border-color:rgba(255,255,255,0.2);">
+            <span class="field-error" id="emailError">Please enter a valid email address</span>
+          </div>
+          <div class="form-group">
+            <select id="issueType" class="form-input"
+              style="background:rgba(255,255,255,0.07);color:#fff;border-color:rgba(255,255,255,0.2);">
+              <option value="">Select Issue Type</option>
+              <option value="technical">Technical Issue</option>
+              <option value="billing">Billing</option>
+              <option value="feature">Feature Request</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="issueError">Please select an issue type</span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" class="form-input" rows="4"
+              placeholder="Describe your issue..."
+              style="background:rgba(255,255,255,0.07);color:#fff;border-color:rgba(255,255,255,0.2);resize:vertical;"></textarea>
+            <span class="field-error" id="messageError">Message must be at least 10 characters</span>
+          </div>
+          <button type="submit" class="btn btn-yellow btn-full">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    🛡 Car Essentials App &nbsp;|&nbsp; © 2026 Ibraheem Iraqi &amp; Mohamad Agbaria
+  </footer>
+
+  <script src="js/support.js"></script>
+</body>
+</html>
